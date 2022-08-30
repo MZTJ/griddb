@@ -1,0 +1,131 @@
+#توابع
+def cal(a,b,c):
+    if c=="+":
+        print(a+b)
+    elif c=="-":
+        print(a-b)
+    elif c=="*":
+        print(a*b)
+    elif c=="/":
+        print(a/b)
+    else:
+        print("invalid")
+
+def mosalas(e,f,g):
+    if e<f+g and f<e+g and g<e+f:
+        print("masalas hast")
+    else:
+        print("masalas nist")
+
+def oddeven(h):
+    if h%2==0:
+        print("zoj")
+    else:
+        print("fard")
+
+def sum(i,j):
+    print(i+j)
+
+
+
+
+#تمرین منو
+d=0
+print("menu")
+print("1)calculator")
+print("2)triangle")
+print("3)even or odd")
+print("4)sum digit number")
+print("5)exit")
+while d!=5:
+    d=int(input('enter select number:'))
+    if d==1:
+        a=int(input('enter your number:'))
+        b=int(input('enter your number:'))
+        c=input('enter + - * /:')
+        ca=(a,b,c)
+        cal(a,b,c)
+    elif d==2:
+        e=int(input('enter your number:'))
+        f=int(input('enter your number:'))
+        g=int(input('enter your number:'))
+        mos=(e,f,g)
+        mosalas(e,f,g)
+    elif d==3:
+        h=int(input('enter your number:'))
+        zofa=(h)
+        oddeven(h)
+    elif d==4:
+        i=int(input('enter your number:'))
+        j=int(input('enter your number:'))
+        su=(i,j)
+        sum(i,j)
+    elif d==5:
+        print("kharej shod")
+    else:
+        print("invalid")
+
+
+
+
+#تمرین پیدا کردن شماره تلفن با استفاده از اسم
+name=[]
+shomare=[]
+k=0
+
+
+for n in range(10):
+    name.append(input('enter your name:'))
+    shomare.append(int(input('enter your phone number:')))
+
+
+yourname=input('name mored nazar ra vared konid:')
+
+
+for n in range(10):
+    if yourname==name[n]:
+        k=1
+        break
+    else:
+        k=0
+
+if (k==1):
+    print(shomare[n])
+else:
+    print("name eshtebah ast")
+
+
+
+
+#تمرین دیکشنری با چهار ماشین
+
+model={
+    "pride": 1395,
+    "serato": 1375,
+    "peykan": 1345,
+    "vanet": 1385,
+}
+for m , p in model.items():
+    print(m , p)
+
+
+
+
+
+
+#تمرین ایستگاه
+q=input('mabda khod ra vared konid:')
+
+if q=="shade":
+    print("3 istgah mande")
+elif q=="daneshgah":
+    print("2 istgah mande")
+elif q=="tarasht":
+    print("1 istgah mande")
+elif q=="shadegheh":
+    print("shoma be maghsad residid")
+else:
+    print("invalid")
+
+
+
